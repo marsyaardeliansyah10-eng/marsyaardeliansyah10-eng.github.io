@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portofolio Kreatif - Nama Kamu</title>
+    <style>
+        /* Reset dan gaya dasar */
+        * {
+            margin: 0; padding: 0; box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background: #f0f4f8;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: #1e40af;
+            color: white;
+            padding: 1.5rem 2rem;
+            text-align: center;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+        }
+        header h1 {
+            font-weight: 700;
+            font-size: 2rem;
+        }
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        section {
+            margin-bottom: 2.5rem;
+        }
+        section h2 {
+            border-bottom: 3px solid #1e40af;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            color: #1e40af;
+        }
+
+        /* Profil */
+        .profile {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+        }
+        .profile img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #1e40af;
+        }
+        .profile-info {
+            flex: 1;
+        }
+        .profile-info h3 {
+            margin-bottom: 0.3rem;
+        }
+        .profile-info p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        /* Pendidikan & Pengalaman */
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li {
+            margin-bottom: 0.8rem;
+        }
+        .education-item, .experience-item {
+            background: #e0e7ff;
+            padding: 0.8rem 1rem;
+            border-radius: 6px;
+        }
+
+        /* Portofolio */
+        .portfolio-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+        .portfolio-item {
+            background: #f9fafb;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            padding: 1rem;
+            transition: box-shadow 0.3s ease;
+        }
+        .portfolio-item:hover {
+            box-shadow: 0 8px 20px rgba(30,64,175,0.25);
+        }
+        .portfolio-item img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin-bottom: 0.8rem;
+        }
+        .portfolio-title {
+            font-weight: 600;
+            color: #1e40af;
+            margin-bottom: 0.5rem;
+        }
+        .portfolio-desc {
+            font-size: 0.9rem;
+            color: #555;
+            margin-bottom: 1rem;
+        }
+        button.toggle-details {
+            background: #1e40af;
+            border: none;
+            color: white;
+            padding: 0.5rem 0.8rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: background 0.3s ease;
+        }
+        button.toggle-details:hover {
+            background: #3749db;
+        }
+        .details {
+            display: none;
+            font-size: 0.85rem;
+            color: #444;
+            margin-top: 0.5rem;
+            border-top: 1px solid #cbd5e1;
+            padding-top: 0.5rem;
+        }
+
+        /* Responsive */
+        @media(max-width: 600px) {
+            .profile {
+                flex-direction: column;
+                text-align: center;
+            }
+            .portfolio-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portofolio Kreatif - Nama Kamu</h1>
+    </header>
+
+    <main>
+        <!-- Profil -->
+        <section id="profil">
+            <h2>Profil</h2>
+            <div class="profile">
+                <img src="https://i.pravatar.cc/150?img=3" alt="Foto Profil Nama Kamu" />
+                <div class="profile-info">
+                    <h3>Marsya Ardeliansyah</h3>
+                    <p>Mahasiswa Teknik Informatika yang kreatif dan antusias dengan pengembangan web dan desain UI/UX. Berpengalaman dalam membangun website responsif dan aplikasi berbasis web.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pendidikan -->
+        <section id="pendidikan">
+            <h2>Pendidikan</h2>
+            <ul>
+                <li class="education-item">
+                    <strong>Sarjana Teknik Informatika</strong><br/>
+                    Universitas Contoh, 2022 - Sekarang<br/>
+                    IPK: 3.75
+                </li>
+                <li class="education-item">
+                    <strong>SMA Negeri 1 Contoh</strong><br/>
+                    Jurusan IPA, 2019 - 2022
+                </li>
+            </ul>
+        </section>
+
+        <!-- Pengalaman Organisasi -->
+        <section id="pengalaman">
+            <h2>Pengalaman Organisasi</h2>
+            <ul>
+                <li class="experience-item">
+                    <strong>Ketua Divisi IT</strong> - Himpunan Mahasiswa Teknik Informatika (HMTI), 2023 - Sekarang<br/>
+                    Bertanggung jawab mengelola tim pengembangan website dan aplikasi internal organisasi.
+                </li>
+                <li class="experience-item">
+                    <strong>Anggota</strong> - UKM Pecinta Teknologi, 2022 - 2023<br/>
+                    Mengikuti workshop dan seminar teknologi serta membantu acara organisasi.
+                </li>
+            </ul>
+        </section>
+
+        <!-- Portofolio -->
+        <section id="portofolio">
+            <h2>Portofolio Pembuatan Website</h2>
+            <div class="portfolio-list">
+                <div class="portfolio-item">
+                    <img src="https://via.placeholder.com/400x160?text=Website+1" alt="Screenshot Website 1" />
+                    <div class="portfolio-title">Aplikasi E-commerce Sederhana</div>
+                    <div class="portfolio-desc">Website jual beli produk lokal dengan fitur keranjang dan pembayaran online.</div>
+                    <button class="toggle-details">Lihat Detail</button>
+                    <div class="details">
+                        <p><strong>Tanggal Pembuatan:</strong> Juli 2024</p>
+                        <p><strong>Teknologi:</strong> HTML, CSS, JavaScript, Firebase</p>
+                        <p><strong>Deskripsi:</strong> Aplikasi ini dirancang untuk mempermudah penjual produk lokal memasarkan barang mereka secara online dengan sistem pembayaran dan manajemen produk yang mudah digunakan.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://via.placeholder.com/400x160?text=Website+2" alt="Screenshot Website 2" />
+                    <div class="portfolio-title">Website Portfolio Freelancer</div>
+                    <div class="portfolio-desc">Website portfolio interaktif untuk menampilkan karya dan layanan freelance.</div>
+                    <button class="toggle-details">Lihat Detail</button>
+                    <div class="details">
+                        <p><strong>Tanggal Pembuatan:</strong> September 2024</p>
+                        <p><strong>Teknologi:</strong> React.js, CSS Modules, Netlify</p>
+                        <p><strong>Deskripsi:</strong> Website ini menampilkan proyek freelance, testimoni klien, dan formulir kontak dengan tampilan modern dan responsif.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Toggle detail portofolio
+        const buttons = document.querySelectorAll('.toggle-details');
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                const details = button.nextElementSibling;
+                if(details.style.display === 'block'){
+                    details.style.display = 'none';
+                    button.textContent = 'Lihat Detail';
+                } else {
+                    details.style.display = 'block';
+                    button.textContent = 'Sembunyikan Detail';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
