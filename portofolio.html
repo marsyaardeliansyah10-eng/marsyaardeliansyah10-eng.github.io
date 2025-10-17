@@ -2,7 +2,7 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Portofolio PKL - Marsya Ardeliansyah</title>
   <style>
     * {
@@ -67,14 +67,10 @@
       display: inline-block;
     }
 
-    .profile,
-    .education,
-    .organization,
-    .portfolio,
-    .contact {
+    .profile, .education, .organization, .portfolio, .contact {
       background: white;
       border-radius: 15px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
       padding: 2rem;
       margin-bottom: 2rem;
     }
@@ -88,13 +84,15 @@
       border: 3px solid #7a77ff;
     }
 
-    .education ul,
-    .organization ul {
+    .profile h3 {
+      margin-bottom: 0.5rem;
+    }
+
+    .education ul, .organization ul {
       list-style: none;
     }
 
-    .education li,
-    .organization li {
+    .education li, .organization li {
       margin-bottom: 0.8rem;
     }
 
@@ -107,7 +105,7 @@
     .card {
       background: #fff;
       border-radius: 12px;
-      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 5px 10px rgba(0,0,0,0.1);
       overflow: hidden;
       transition: transform 0.3s ease;
     }
@@ -156,7 +154,7 @@
       color: white;
     }
 
-    @media (max-width: 768px) {
+    @media(max-width: 768px) {
       section {
         padding: 2rem 5%;
       }
@@ -179,14 +177,13 @@
     <a href="#kontak">Kontak</a>
   </nav>
 
-  <section id="profil" class="profile" style="text-align: center;">
-    <img src="Marsya Ardeliansyah.png" alt="Foto Profil" />
-    <h3>Marsya Ardeliansyah</h3>
-    <p>
-      Saya adalah siswi SMK Informatika jurusan Rekayasa Perangkat Lunak (RPL).
-      Saya memiliki ketertarikan dalam pengembangan web dan ingin mengembangkan
-      kemampuan saya melalui kegiatan Praktik Kerja Lapangan (PKL).
-    </p>
+  <section id="profil" class="profile">
+    <center>
+      <img src="Marsya Ardeliansyah.png" alt="Foto Profil">
+      <h3>Marsya Ardeliansyah</h3>
+      <p>Saya adalah siswi SMK Informatika jurusan Rekayasa Perangkat Lunak (RPL). 
+         Saya memiliki ketertarikan dalam pengembangan web dan ingin mengembangkan kemampuan saya melalui kegiatan Praktik Kerja Lapangan (PKL).</p>
+    </center>
   </section>
 
   <section id="pendidikan" class="education">
@@ -194,7 +191,7 @@
     <ul>
       <li><strong>SMK Informatika</strong> (2022 - Sekarang)<br>Jurusan Rekayasa Perangkat Lunak</li>
       <li><strong>SMPN 17 Depok</strong> (2021 - 2024)</li>
-      <li><strong>SDN Krukut 01</strong> (2016 - 2021)</li>
+      <li><strong>SDN Krukut 01</strong> (2016-2021)</li>
     </ul>
   </section>
 
@@ -211,102 +208,54 @@
     <div class="portfolio-cards" id="portfolio-list"></div>
   </section>
 
- <section id="sertifikat" class="portfolio">
-  <h2>Sertifikat</h2>
-  <div class="portfolio-cards">
+  <!-- === SERTIFIKAT === -->
+  <section id="sertifikat" class="portfolio">
+    <h2>Sertifikat</h2>
+    <div class="portfolio-cards">
 
-    <div class="card">
-      <a href="html.jpeg" target="_blank">
-        <img src="html.jpeg alt="Sertifikat HTML" />
-      </a>
-      <div class="card-content">
-        <h3>HTML</h3>
-        <p>Sertifikat dari SoloLearn setelah menyelesaikan kursus HTML dasar.</p>
+      <div class="card">
+        <img src="sertifikat-html.png" alt="Sertifikat HTML - SoloLearn">
+        <div class="card-content">
+          <h3>HTML Course</h3>
+          <p>Sertifikat dari SoloLearn setelah menyelesaikan kursus HTML dasar.</p>
+          <p><strong>Platform:</strong> SoloLearn</p>
+        </div>
       </div>
-    </div>
 
-    <div class="card">
-      <a href="css.jpeg" target="_blank">
-        <img src="css.jpeg" alt="Sertifikat CSS" />
-      </a>
-      <div class="card-content">
-        <h3>CSS</h3>
-        <p>Sertifikat dari SoloLearn untuk penguasaan dasar-dasar CSS.</p>
+      <div class="card">
+        <img src="sertifikat-css.png" alt="Sertifikat CSS - SoloLearn">
+        <div class="card-content">
+          <h3>CSS Course</h3>
+          <p>Sertifikat dari SoloLearn untuk penguasaan dasar-dasar CSS.</p>
+          <p><strong>Platform:</strong> SoloLearn</p>
+        </div>
       </div>
-    </div>
 
-    <div class="card">
-      <a href="javaScript intermediate.jpeg" target="_blank">
-        <img src="javaScript intermediate.jpeg" alt="Sertifikat JavaScript Intermediate" />
-      </a>
-      <div class="card-content">
-        <h3>JavaScript Intermediate</h3>
-        <p>Sertifikat kemampuan JavaScript tingkat menengah dari SoloLearn.</p>
+      <div class="card">
+        <img src="sertifikat-js-int.png" alt="JavaScript Intermediate - SoloLearn">
+        <div class="card-content">
+          <h3>JavaScript Intermediate</h3>
+          <p>Sertifikat yang menunjukkan kemampuan JavaScript tingkat menengah.</p>
+          <p><strong>Platform:</strong> SoloLearn</p>
+        </div>
       </div>
-    </div>
 
-    <div class="card">
-      <a href="introduction to javaScript.jpg" target="_blank">
-        <img src="introduction to javaScript.jpg" alt="Introduction to JavaScript" />
-      </a>
-      <div class="card-content">
-        <h3>Introduction to JavaScript</h3>
-        <p>Sertifikat pemahaman dasar-dasar JavaScript dari SoloLearn.</p>
+      <div class="card">
+        <img src="sertifikat-intro-js.png" alt="Introduction to JavaScript - SoloLearn">
+        <div class="card-content">
+          <h3>Introduction to JavaScript</h3>
+          <p>Sertifikat pemahaman dasar-dasar JavaScript.</p>
+          <p><strong>Platform:</strong> SoloLearn</p>
+        </div>
       </div>
-    </div>
-
-  </div>
- </section>
 
     </div>
   </section>
 
+  <!-- === KONTAK === -->
   <section id="kontak" class="contact">
     <h2>Kontak</h2>
     <div class="contact-info">
-      <p><strong>Email:</strong> <a href="mailto:marsya.ardeliansyah10@smk.belajar.id">marsya.ardeliansyah10@smk.belajar.id</a></p>
-      <p><strong>Telepon:</strong> <a href="tel:+62895414751335">+62 895-4147-51335</a></p>
-      <p><strong>Alamat:</strong> Jl. Madrasah Kp. Utan RW06 / RW07</p>
-    </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Marsya Ardeliansyah. All rights reserved.</p>
-  </footer>
-
-  <!-- === SCRIPT PORTOFOLIO === -->
-  <script>
-    const portfolioData = [
-      {
-        title: "Jadwal Pembelajaran",
-        img: "project.png",
-        desc: "Tampilan tabel jadwal pembelajaran yang dibuat menggunakan HTML dan CSS. Digunakan untuk merencanakan materi dari Juli hingga September 2024/2025.",
-        tech: "HTML & CSS"
-      },
-      {
-        title: "Toko Belanja Online",
-        img: "project online shop.png",
-        desc: "Website sederhana toko online menggunakan HTML dan CSS. Memiliki header, navigasi, konten utama, dan footer.",
-        tech: "HTML & CSS"
-      }
-    ];
-
-    const portfolioList = document.getElementById("portfolio-list");
-
-    portfolioData.forEach(item => {
-      const card = document.createElement("div");
-      card.classList.add("card");
-      card.innerHTML = `
-        <img src="${item.img}" alt="${item.title}" />
-        <div class="card-content">
-          <h3>${item.title}</h3>
-          <p>${item.desc}</p>
-          <p><strong>Teknologi:</strong> ${item.tech}</p>
-        </div>
-      `;
-      portfolioList.appendChild(card);
-    });
-  </script>
-
-</body>
-</html>
+      <p><strong>Email:</strong> <a href="marsya.ardeliansyah10@smk.belajar.id">marsyaardeliansyah@gmail.com</a></p>
+      <p><strong>Telepon:</strong> <a href="tel:+62895414751335">+62895414751335</a></p>
+     
